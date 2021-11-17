@@ -67,7 +67,7 @@ resource "aws_instance" "web" {
   key_name               = "${var.KEY_NAME}"
 
   provisioner "file" {
-    source      = "/Trabalho/ELB/script.sh"
+    source      = "../ELB/script.sh"
     destination = "/tmp/script.sh"
   }
 
